@@ -1,0 +1,14 @@
+<html>
+    <body>
+        {% for msg in get_flashed_messages() %}
+        <p>{{ msg }}</p>
+        {%endfor%}
+        <h2>{{ amount }} {{ currfrom }} EXCHANGES TO {{ res }} {{ currto }}</h2>
+        <h4>RATE: 1 {{ currfrom }} to {{ rate}} {{ currto }}</h4>
+        <form action="/forex-converter">
+            <button>Back</button>
+        </form>
+    </body>
+</html>
+
+
